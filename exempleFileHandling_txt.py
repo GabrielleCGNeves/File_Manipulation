@@ -1,9 +1,11 @@
 #Escrevendo o nome e extensão do arquivo
 arquivotxt = 'arquivo.txt'
+print(arquivotxt)
 
 #Criar arquivo e escrever uma linha
 with open(arquivotxt, 'writed') as f:
     f.write('Arquivo criado\n')
+print(arquivotxt)
 
 #Leitura  de arquivo
 f = open(arquivotxt, 'r')
@@ -13,7 +15,6 @@ print(conteudo)
 #Leitura de arquivo e escrever uma linha
 with open(arquivotxt, 'w') as f:
     f.write('Sobrescrever')
-
 
 #Leitura de arquivo
 print(open(arquivotxt,'r').read())
